@@ -332,69 +332,26 @@
             }
         }
 		
-/* Condo Section */
-#condo {
-    padding: 4rem 2rem;
-    background-color: var(--bg-color); /* Same background color as home */
-    border-radius: 8px;
-    text-align: center;
-    color: #000;
-}
+		    p {
+        font-size: 1.2rem; /* Default for larger screens */
+        line-height: 1.6;
+        margin: 1rem 0;
+    }
 
-#condo h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--main-color);
-}
+    @media (max-width: 768px) {
+        p {
+            font-size: 1rem; /* Adjust font size for tablets */
+            line-height: 1.5;
+        }
+    }
 
-#condo .product-list {
-    display: flex; /* Align items horizontally */
-    justify-content: center; /* Center all products */
-    gap: 2rem; /* Space between products */
-    flex-wrap: wrap; /* Allow products to wrap if the screen is small */
-    padding: 2rem 0;
-}
+    @media (max-width: 480px) {
+        p {
+            font-size: 0.9rem; /* Further reduce size for small screens */
+            line-height: 1.4;
+        }
+    }
 
-#condo .product {
-    background-color: #fff;
-    color: #000;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    text-align: center;
-    flex: 0 0 300px; /* Fixed width of 300px */
-    max-width: 300px;
-}
-
-#condo .product img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-#condo .product h3 {
-    font-size: 1.5rem;
-    margin: 1rem 0 0.5rem;
-}
-
-#condo .product p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-#condo .product button {
-    background-color: var(--main-color);
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#condo .product button:hover {
-    background-color: var(--accent-color);
-}
 
     </style>
 </head>
@@ -411,7 +368,6 @@
     <i class="fa fa-bars hamburger" onclick="toggleMenu()"></i>
     <ul class="menu">
         <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </header>
@@ -427,12 +383,20 @@
             <h2>Your Trusted Real Estate Partner</h2>
             <!-- Social Icons Below the Heading -->
             <div class="social-icons">
+				<p>For more listings click here!</p>
                 <a href="https://www.facebook.com/eleonor.c.guyot" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+			
+			</div>
+            <div class="social-icons">
+				<p>Message me!</p>
+			</div>
+            <div class="social-icons">
                 <a href="mailto:elietabili@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-				<a href="https://" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-				<a href="https://" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-				<a href="https://" target="_blank"><i class="fa-brands fa-viber"></i></a>
-				<a href="https://" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+				<a href="https://www.instagram.com/llabanguyot/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://x.com/llabanguyot" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				<a href="viber://add?number=+639358156234" target="_blank"><i class="fa-brands fa-viber"></i></a>
+				<a href="https://wa.me/+639107262894" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+				<a href="https://www.youtube.com/@eleonorllaban6593" target="_blank"><i class="fa-brands fa-youtube"></i></a>
 
             </div>
 
@@ -462,107 +426,6 @@
             </div>
         </div>
     </section>
-
-<section id="products" class="products">
-    <h2>Subdivision Listings</h2>
-    <div class="product-list">
-        <div class="product">
-            <img src="" alt="Property 1">
-            <h3>𝗩𝗜𝗟𝗟𝗔 𝗦𝗘𝗩𝗘𝗥𝗜𝗡𝗔 𝗦𝗨𝗕𝗗𝗜𝗩𝗜𝗦𝗜𝗢𝗡</h3>
-            <p>Single attached - 15k reservation fee</p>
-            <p>Duplex - 12,500 reservation fee</p>
-            <p>Purok 5 Laguitas, Malaybalay City, Bukidnon </p>
-            <a href="https://www.facebook.com/story.php?story_fbid=122189625806069623&id=61552088702877&mibextid=qi2Omg&rdid=104HpuKlY6qboJjr" target="_blank"><button>View Details</button></a>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Property 2">
-            <h3>Luxury Villa</h3>
-            <p>₱20,000,000 - Cebu</p>
-            <button>View Details</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Property 3">
-            <h3>Cozy Bungalow</h3>
-            <p>₱3,000,000 - Davao</p>
-            <button>View Details</button>
-        </div>
-
-    </div>
-</section>
-
-<!-- New Condo Section -->
-<section id="condo" class="products">
-    <h2>Condo Listings</h2>
-    <div class="product-list">
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Condo 1">
-            <h3>Luxury Condo</h3>
-            <p>₱8,000,000 - Makati</p>
-            <button>View Details</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Condo 2">
-            <h3>Cozy Studio</h3>
-            <p>₱4,000,000 - Quezon City</p>
-            <button>View Details</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Condo 3">
-            <h3>Penthouse Condo</h3>
-            <p>₱15,000,000 - Taguig</p>
-            <button>View Details</button>
-        </div>
-    </div>
-</section>
-
-<section id="products" class="products">
-    <h2>House and lot Listings</h2>
-    <div class="product-list">
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Property 1">
-            <h3>Modern Apartment</h3>
-            <p>₱5,000,000 - Manila</p>
-            <button>View Details</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Property 2">
-            <h3>Luxury Villa</h3>
-            <p>₱20,000,000 - Cebu</p>
-            <button>View Details</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Property 3">
-            <h3>Cozy Bungalow</h3>
-            <p>₱3,000,000 - Davao</p>
-            <button>View Details</button>
-        </div>
-
-    </div>
-</section>
-
-<section id="condo" class="products">
-    <h2>Lot Only Listings</h2>
-    <div class="product-list">
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Condo 1">
-            <h3>Luxury Condo</h3>
-            <p>₱8,000,000 - Makati</p>
-            <button>View Details</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Condo 2">
-            <h3>Cozy Studio</h3>
-            <p>₱4,000,000 - Quezon City</p>
-            <button>View Details</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Condo 3">
-            <h3>Penthouse Condo</h3>
-            <p>₱15,000,000 - Taguig</p>
-            <button>View Details</button>
-        </div>
-    </div>
-</section>
 
 
 
